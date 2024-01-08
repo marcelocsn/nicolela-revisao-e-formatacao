@@ -98,6 +98,7 @@ header a {
     text-decoration: none;
     display: inline-block;
     transition: .2s;
+    margin-bottom: 30px;
 }
 
 /* Estilo original para o menu desktop no header */
@@ -122,6 +123,7 @@ header nav.menu-desktop {
 header nav.menu-desktop a:hover {
     color: black;
     transform: scale(1.05);
+    margin-bottom: 30px;
 }
 
 /* Estilo original para a lista não ordenada no menu desktop no header */
@@ -555,7 +557,7 @@ section.sobre .flex {
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    margin-bottom: 15px;
+    
 }
 
 .botao5::before {
@@ -584,6 +586,57 @@ section.sobre .flex {
 
 /* fim estilização ancora5(botao5) */
 
+/* Início estilização da âncora para a página do TikTok */
+.botao6 {
+    background-color: white; /* Cor de fundo branco */
+    align-items: center;
+    color: #ff69b4; /* Cor do texto rosa do TikTok */
+    width: 350px; /* Utiliza toda a largura disponível */
+    margin: 0 auto; /* Centraliza horizontalmente */   
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff69b4; /* Cor da borda rosa do TikTok */
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.botao6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #2a0887);
+    transition: 0.5s;
+}
+
+.botao6:hover::before {
+    left: 100%;
+}
+
+.botao6 i {
+    position: absolute;
+    color: #ff69b4;; /* Cor do ícone rosa do TikTok */
+    font-size: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Fim estilização da âncora para a página do TikTok */
+
+
+
 /* Adicionado regra de mídia para dispositivos móveis */
 @media screen and (max-width: 768px) {
     .especialidades .flex {
@@ -599,11 +652,13 @@ section.sobre .flex {
     .topo-do-site .flex {
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
     }
 
     .topo-do-site .txt-topo-site h1 {
         font-size: 25px;
         text-align: justify;
+        margin-top: 20px;
     }
 
     .topo-do-site .txt-topo-site p {
